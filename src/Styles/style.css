@@ -1,0 +1,123 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    user-select: none;
+
+
+    background: rgb(150,0,255);
+    background: linear-gradient(54deg, rgba(150,0,255,1) 0%, rgba(154,33,254,1) 8%, rgba(156,50,253,1) 15%, rgba(160,79,252,1) 28%, rgba(162,96,252,1) 38%, rgba(164,116,251,1) 44%, rgba(166,139,250,1) 51%, rgba(167,149,250,1) 58%, rgba(174,228,248,1) 78%, rgba(174,228,248,1) 85%, rgba(174,228,248,1) 93%);
+    background-size: 400%;
+    -webkit-animation: animaFundo 15s ease infinite;
+    -moz-animation: animaFundo 15s ease infinite;
+    animation: animaFundo 15s ease infinite;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 60px;
+    border-radius: 15px;
+
+    background: rgb(63,94,251);
+    background: linear-gradient(61deg, rgba(63,94,251,1) 0%, rgba(86,91,234,1) 12%, rgba(111,88,215,1) 22%, rgba(139,84,193,1) 34%, rgba(158,82,179,1) 50%, rgba(175,80,166,1) 61%, rgba(199,77,147,1) 75%, rgba(199,77,147,1) 75%, rgba(224,74,128,1) 87%, rgba(239,72,117,1) 100%);
+    background-size: 400%;
+    -webkit-animation: animaFundo 15s ease infinite;
+    -moz-animation: animaFundo 15s ease infinite;
+    animation: animaFundo 15s ease infinite;
+
+}
+
+h2{
+    font-size: 3rem;
+    color: #ffff;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.reset{
+    padding: 15px 20px;
+    width: 100%;
+    color: #000;
+    background-color: #ffff;
+    border: none;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 15px;
+}
+
+.reset:hover{
+    background-color: #fd0f04;
+    transition: 0.8s all;
+    color: #ffff;
+}
+
+.reset:focus{
+    color: #ec38bc;
+    background-color: #262809;
+}
+
+.game{
+    width: 430px;
+    height: 430px;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+}
+
+.item{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+
+    font-size: 3rem;
+    transform: rotateY(180deg);
+    transition: 0.25s;
+}
+
+.item::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: #404040;
+    transition: 0.25s;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+}
+
+.item.boxOpen{
+    transform: rotateY(0deg);
+}
+
+.boxOpen::after,
+.boxMatch::after{
+    transform: rotateY(180deg);
+}
+
+
+
+@keyframes animaFundo {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
