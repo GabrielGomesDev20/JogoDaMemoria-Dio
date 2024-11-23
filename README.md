@@ -26,6 +26,8 @@ Bem-vindo ao **Jogo da Memória de Emojis**! Este é um projeto simples e divert
 <img src="./src/imagens/Print Jogo Inicio.png">
 <img src="./src/imagens/Print jogo ganho.png">
 
+---
+
 ## 🛠️ Melhorias Futuras
 
 - Adicionar níveis de dificuldade.
