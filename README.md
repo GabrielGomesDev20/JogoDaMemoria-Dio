@@ -37,7 +37,7 @@ Bem-vindo ao **Jogo da Memória de Emojis**! Este é um projeto simples e divert
 ---
 ## 💻 Como Jogar Localmente
 
-Clique no [Link](URL) para acessar o jogo!
+Clique no [Link](https://gabrielgomesdev20.github.io/JogoDaMemoria-Dio/) para acessar o jogo!
 
 
 ---
